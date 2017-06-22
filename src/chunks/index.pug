@@ -1,0 +1,608 @@
+section.top-info
+    img(src="img/top-image.jpg" srcset="img/top-image_mobile.jpg, img/top-image_2x.jpg 2x" alt="" data-parallax='{"y":100}').top-info__background
+    .container
+        .top-info__title-wrapper
+            .top-info__pre-title
+                span Intensive program barista training
+            h1.top-info__title.
+                Barista Training in <span>amsterdam</span>
+            .top-info__sub-title.
+                On the basis of the company's largest coffee roasters   
+            a(href="#program").top-info__scroll-btn.js-scroll
+                +icon('arrow')
+section.programs#program
+    .programs__beans-wrapper
+        img(src="img/beans/programs-1.png" alt="" data-parallax='{"y":-200}' ).programs__beans-img.programs__beans-img--top-right
+        img(src="img/beans/programs-2.png" alt="" data-parallax='{"y":250}' ).programs__beans-img.programs__beans-img--left
+        img(src="img/beans/programs-3.png" alt="" data-parallax='{"y":-175}' ).programs__beans-img.programs__beans-img--right
+    .container
+        .section-title.section-title--programs.programs__title
+            span programs
+        .section-sub-title.
+            We share their experience and professional barista championships multiple winners
+        .row.programs__row    
+            .programs__tabs-wrapper
+            .programs__tabs-head-wrapper
+                .programs__tabs-head
+                    a(href="#basic").programs__tabs-link.js-tab-link.active
+                        span Basic
+                    a(href="#premium").programs__tabs-link.js-tab-link 
+                        span Premium
+                    a(href="#platinum").programs__tabs-link.js-tab-link 
+                        span Platinum
+                    .programs__tabs-head-line    
+            .programs__tabs-body
+                .programs__tabs-item#basic.active
+                    .programs__tabs-item-name.
+                        Basic
+                    .programs__top-info
+                        .programs__tabs-image-wrapper
+                            img(src="img/programs.jpg" srcset="img/programs.jpg, img/programs_2x.jpg 2x" alt="")
+                        .programs__tabs-main-info            
+                            .programs__course-name.
+                                Beginners Course
+                            .programs__course-info.programs__course-info--certificate
+                                +icon('course-1')
+                                span.programs__course-info-name
+                                    | Certificate
+                            .programs__course-info.programs__course-info--time
+                                +icon('course-2')
+                                span.programs__course-info-name
+                                    | 240 minets
+                            .programs__course-price
+                                | 1 500<span>usd</span>
+                            a(href="#").programs__course-btn
+                                span registration
+                    .programs__column-info-wrap              
+                        .programs__column-item
+                            .programs__column-item-title
+                                span.
+                                    Provenance<br>
+                                    coffee and basic concepts:
+                            .programs__column-item-text.
+                                Legend of tеhe origin of coffee.
+                            ul.programs__list
+                                li.programs__list-item.
+                                    Chronicle of the spread of the coffee tree
+                                li.programs__list-item.
+                                    What is coffee?
+                                li.programs__list-item.
+                                    The structure of the coffee berry
+                                li.programs__list-item.
+                                    Arabica and Robusta
+                                li.programs__list-item.
+                                    Coffee Belt land
+                                li.programs__list-item.
+                                    Fruiting coffee tree
+                                li.programs__list-item.programs__list-item--nowrap.
+                                    Seven steps of the coffee plantation to the consumer
+                                li.programs__list-item.
+                                    Breeding and hybridization of coffee tree
+                        .programs__column-item
+                            .programs__column-item-title
+                                span.
+                                    coffee production technology:
+                            ul.programs__list
+                                - var list2 = ['Methods for collecting coffee berries', 'Processing collected berries', 'Calibration and sorting', 'Some methods of classification and labeling of coffee beans.', 'Formation of grade names.', 'Storage of green (not fried) Coffee']
+                                each item in list2    
+                                    li.programs__list-item= item 
+                        .programs__column-item
+                            .programs__column-item-title
+                                span.
+                                    roasting Technology <br>
+                                    bean. and Stage <br>
+                                    types of roasting.
+                            ul.programs__list
+                                - var list3 = ['The technology of roasting coffee beans.', 'Changes in the beans.', 'Stages and types of roasting.', 'Roasted coffee. Monosorta and hood.', 'Decaffeination of coffee', 'Flavoring', 'Storage roasted  coffee']
+                                each item,index in list3    
+                                    li.programs__list-item= item                        
+                    .programs__course-table-wrap
+                        .programs__course-table-title.
+                            The course also includes:
+                        table.programs__course-table
+                            tbody
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Coffee machine and grinder - practice - types of coffee machines and coffee grinders
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        What makes professional coffee machines and coffee grinders.
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Main components of coffee machines and coffee-Lathes, autolathes. Their purpose
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        How to choose a coffee machine and coffee grinder
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        The structure of the machine. How to maintain, clean and customize coffee machine
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        The structure of the grinders. How to maintain, clean and customize coffee Molko
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Making beverages - praktika- machines and espresso rules
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Technology and regulations frothed milk
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Terms of tasting coffee
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Terms of preparation of standard drinks line: espresso, cappuccino, latte and others.
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Latte Art - Features practice and the importance of Latte Art in business and the barista
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        1 views Latte Art - Pitching
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        2 views Latte Art - topping
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        3 views Latte Art - Etching
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        4 views Latte Art - chocolate chip stencils
+                .programs__tabs-item#premium
+                    .programs__tabs-item-name.
+                        premium
+                    .programs__top-info
+                        .programs__tabs-image-wrapper
+                            img(src="img/programs.jpg" srcset="img/programs.jpg, img/programs_2x.jpg 2x" alt="")
+                        .programs__tabs-main-info            
+                            .programs__course-name.
+                                Premium Course
+                            .programs__course-info.programs__course-info--certificate
+                                +icon('course-1')
+                                span.programs__course-info-name
+                                    | Certificate
+                            .programs__course-info.programs__course-info--time
+                                +icon('course-2')
+                                span.programs__course-info-name
+                                    | 320 minets
+                            .programs__course-price
+                                | 2 500<span>usd</span>
+                            a(href="#").programs__course-btn
+                                span registration
+                    .programs__column-info-wrap              
+                        .programs__column-item
+                            .programs__column-item-title
+                                span.
+                                    Provenance<br>
+                                    coffee and basic concepts:
+                            .programs__column-item-text.
+                                Legend of tеhe origin of coffee.
+                            ul.programs__list
+                                li.programs__list-item.
+                                    Chronicle of the spread of the coffee tree
+                                li.programs__list-item.
+                                    What is coffee?
+                                li.programs__list-item.
+                                    The structure of the coffee berry
+                                li.programs__list-item.
+                                    Arabica and Robusta
+                                li.programs__list-item.
+                                    Coffee Belt land
+                                li.programs__list-item.
+                                    Fruiting coffee tree
+                                li.programs__list-item.programs__list-item--nowrap.
+                                    Seven steps of the coffee plantation to the consumer
+                                li.programs__list-item.
+                                    Breeding and hybridization of coffee tree
+
+                        .programs__column-item
+                            .programs__column-item-title
+                                span.
+                                    coffee production technology:
+
+                            ul.programs__list
+                                - var list2 = ['Methods for collecting coffee berries', 'Processing collected berries', 'Calibration and sorting', 'Some methods of classification and labeling of coffee beans.', 'Formation of grade names.', 'Storage of green (not fried) Coffee']
+                                each item in list2    
+                                    li.programs__list-item= item 
+                        .programs__column-item
+                            .programs__column-item-title
+                                span.
+                                    roasting Technology <br>
+                                    bean. and Stage <br>
+                                    types of roasting.
+                            ul.programs__list
+                                - var list3 = ['The technology of roasting coffee beans.', 'Changes in the beans.', 'Stages and types of roasting.', 'Roasted coffee. Monosorta and hood.', 'Decaffeination of coffee', 'Flavoring', 'Storage roasted  coffee']
+                                each item,index in list3    
+                                    li.programs__list-item= item                        
+                    .programs__course-table-wrap
+                        .programs__course-table-title.
+                            The course also includes:
+                        table.programs__course-table
+                            tbody
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Coffee machine and grinder - practice - types of coffee machines and coffee grinders
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        What makes professional coffee machines and coffee grinders.
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Main components of coffee machines and coffee-Lathes, autolathes. Their purpose
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        How to choose a coffee machine and coffee grinder
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        The structure of the machine. How to maintain, clean and customize coffee machine
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        The structure of the grinders. How to maintain, clean and customize coffee Molko
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Making beverages - praktika- machines and espresso rules
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Technology and regulations frothed milk
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Terms of tasting coffee
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Terms of preparation of standard drinks line: espresso, cappuccino, latte and others.
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Latte Art - Features practice and the importance of Latte Art in business and the barista
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--unavailable
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        1 views Latte Art - Pitching
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        2 views Latte Art - topping
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        3 views Latte Art - Etching
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        4 views Latte Art - chocolate chip stencils
+                .programs__tabs-item#platinum
+                    .programs__tabs-item-name.
+                        Platinum
+                    .programs__top-info
+                        .programs__tabs-image-wrapper
+                            img(src="img/programs.jpg" srcset="img/programs.jpg, img/programs_2x.jpg 2x" alt="")
+                        .programs__tabs-main-info            
+                            .programs__course-name.
+                                Platinum Course
+                            .programs__course-info.programs__course-info--certificate
+                                +icon('course-1')
+                                span.programs__course-info-name
+                                    | Certificate
+                            .programs__course-info.programs__course-info--time
+                                +icon('course-2')
+                                span.programs__course-info-name
+                                    | 540 minets
+                            .programs__course-price
+                                | 5 500<span>usd</span>
+                            a(href="#").programs__course-btn
+                                span registration
+                    .programs__column-info-wrap              
+                        .programs__column-item
+                            .programs__column-item-title
+                                span.
+                                    Provenance<br>
+                                    coffee and basic concepts:
+                            .programs__column-item-text.
+                                Legend of tеhe origin of coffee.
+                            ul.programs__list
+                                li.programs__list-item.
+                                    Chronicle of the spread of the coffee tree
+                                li.programs__list-item.
+                                    What is coffee?
+                                li.programs__list-item.
+                                    The structure of the coffee berry
+                                li.programs__list-item.
+                                    Arabica and Robusta
+                                li.programs__list-item.
+                                    Coffee Belt land
+                                li.programs__list-item.
+                                    Fruiting coffee tree
+                                li.programs__list-item.programs__list-item--nowrap.
+                                    Seven steps of the coffee plantation to the consumer
+                                li.programs__list-item.
+                                    Breeding and hybridization of coffee tree
+
+                        .programs__column-item
+                            .programs__column-item-title
+                                span.
+                                    coffee production technology:
+
+                            ul.programs__list
+                                - var list2 = ['Methods for collecting coffee berries', 'Processing collected berries', 'Calibration and sorting', 'Some methods of classification and labeling of coffee beans.', 'Formation of grade names.', 'Storage of green (not fried) Coffee']
+                                each item in list2    
+                                    li.programs__list-item= item 
+                        .programs__column-item
+                            .programs__column-item-title
+                                span.
+                                    roasting Technology <br>
+                                    bean. and Stage <br>
+                                    types of roasting.
+                            ul.programs__list
+                                - var list3 = ['The technology of roasting coffee beans.', 'Changes in the beans.', 'Stages and types of roasting.', 'Roasted coffee. Monosorta and hood.', 'Decaffeination of coffee', 'Flavoring', 'Storage roasted  coffee']
+                                each item,index in list3    
+                                    li.programs__list-item= item                        
+                    .programs__course-table-wrap
+                        .programs__course-table-title.
+                            The course also includes:
+                        table.programs__course-table
+                            tbody
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Coffee machine and grinder - practice - types of coffee machines and coffee grinders
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        What makes professional coffee machines and coffee grinders.
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Main components of coffee machines and coffee-Lathes, autolathes. Their purpose
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        How to choose a coffee machine and coffee grinder
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        The structure of the machine. How to maintain, clean and customize coffee machine
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        The structure of the grinders. How to maintain, clean and customize coffee Molko
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Making beverages - praktika- machines and espresso rules
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Technology and regulations frothed milk
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Terms of tasting coffee
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Terms of preparation of standard drinks line: espresso, cappuccino, latte and others.
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        Latte Art - Features practice and the importance of Latte Art in business and the barista
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        1 views Latte Art - Pitching
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        2 views Latte Art - topping
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        3 views Latte Art - Etching
+                                tr
+                                    td.programs__course-table-status.programs__course-table-status--available
+                                        span.programs__course-table-status-icon
+                                    td.programs__course-table-info.
+                                        4 views Latte Art - chocolate chip stencils                         
+section.gallery#gallery
+    .gallery__background-wrapper
+        img(src="img/gallery.jpg" alt="" data-parallax='{"y":90}').gallery__background
+    .gallery__beans-wrapper
+        img(src="img/beans/gallery-1.png" alt="" data-parallax='{"y":200}' ).gallery__beans-img.gallery__beans-img--top
+        img(src="img/beans/gallery-2.png" alt=""  data-parallax='{"y":100}' ).gallery__beans-img.gallery__beans-img--bottom
+    .container 
+        .section-title.section-title--gallery
+            span gallery
+        .section-sub-title.section-sub-title--white.section-sub-title--gallery.
+            You yourself are testing the taste benefits of each method
+            and select the type of cooking yourself
+    .gallery__slider.js-gallery
+        - for (var i=0; i < 10;i++)
+            .gallery__slider-item
+                img(src="img/gallery/slide-"+(i+1)+".jpg" srcset="img/gallery/slide-"+(i+1)+".jpg , img/gallery/slide-"+(i+1)+"_2x.jpg 2x" alt="")
+    .container                
+        .gallery__control-wrapper
+            a(href="#" data-slider="slickPrev").gallery__control-btn.gallery__control-btn--prev.js-gallery-btns
+                +icon('gallery-prev')
+            .gallery__control-info
+                span.js-gallery-current 5
+                .gallery__control-info-text from
+                span.js-gallery-all 10   
+            a(href="#" data-slider="slickNext").gallery__control-btn.gallery__control-btn--next.js-gallery-btns
+                +icon('gallery-next')      
+section.testimonials#reviews
+    .container 
+        .section-title
+            span testimonials
+        .section-sub-title.
+            We have enough patience to teach you the art of coffee
+        .testimonials__slider.js-testimonials
+            - for (var i=0; i < 6;i++)
+                .testimonials__slide
+                    .testimonials__avatar
+                        a(href="#").testimonials__soc-link
+                            +icon('facebook')
+                        .testimonials__image
+                            img(src="img/testimonials/testimonials.jpg" srcset="img/testimonials/testimonials.jpg, img/testimonials/testimonials_2x.jpg 2x" alt="")
+                    .testimonials__name.
+                        Alex Nikandrov 
+                    .testimonials__text.
+                        Our company is grateful for the delicious and freshly roasted coffee in our office every day! Our staff of more than 300 people, appreciate quality and flavor of the coffee, because that would be important for our office staff were every morning refreshed and in a good mood! Recommended!      
+section.partners#partners
+    .container 
+        .section-title.section-title--partners
+            span Our partners
+
+        .partners__slider.js-partners
+            .partners__slide
+                img(src="img/partners/abajour_logo.png" srcset="img/partners/abajour_logo.png, img/partners/2x/abajour_logo.png 2x" alt="")
+            .partners__slide
+                img(src="img/partners/altbee_logo.png" srcset="img/partners/altbee_logo.png, img/partners/2x/altbee_logo.png 2x" alt="") 
+            .partners__slide
+                img(src="img/partners/dedushka_logo.png" srcset="img/partners/dedushka_logo.png, img/partners/2x/dedushka_logo.png 2x" alt="") 
+            .partners__slide
+                img(src="img/partners/gdeburger_logo.png" srcset="img/partners/gdeburger_logo.png, img/partners/2x/gdeburger_logo.png 2x" alt="")  
+            .partners__slide
+                img(src="img/partners/logo_baden_baden.png" srcset="img/partners/logo_baden_baden.png, img/partners/2x/logo_baden_baden.png 2x" alt="")
+            .partners__slide
+                img(src="img/partners/logo_klass.png" srcset="img/partners/logo_klass.png, img/partners/2x/logo_klass.png 2x" alt="")
+            .partners__slide
+                img(src="img/partners/dedushka_logo.png" srcset="img/partners/dedushka_logo.png, img/partners/2x/dedushka_logo.png 2x" alt="")         
+section.questions#contact
+    .questions__beans-wrapper
+        img(src="img/beans/question-1.png" alt="" data-parallax='{"y":-75}' ).questions__beans-img.questions__beans-img--left
+        img(src="img/beans/question-2.png" alt="" data-parallax='{"y":-250}' ).questions__beans-img.questions__beans-img--left-second
+        img(src="img/beans/question-3.png" alt="" data-parallax='{"y":-100}' ).questions__beans-img.questions__beans-img--right
+    .container
+        .questions__form-wrapper
+            .questions__form 
+                .questions__title.
+                    have questions?
+                .questions__sub-title.
+                    Leave a request and we will contact you shortly   
+                form#contact-form
+                    .questions__form-inner
+                        .questions__form-group-wrapper
+                            .questions__form-group
+                                input(type="text" name="name").questions__input.js-input
+                                span.questions__placeholder Your name
+                            .questions__form-group
+                                input(type="text" name="phone" maxlength="10").questions__input.js-input
+                                span.questions__placeholder Contact Number
+                        .questions__form-btn-wrapper
+                            .questions__submit-confirm Your information have sended, thank you =)        
+                            button(type="submit").questions__submit 
+                                | send
+                                +icon('submit-arrow')                 
+section.school
+    img(src="img/school.jpg" alt=""  data-parallax='{"y":75}').school__background
+    .container.school__container
+        .section-title.section-title--white.school__title.
+            Professional school
+            barista
+
+        .school__wrapper
+            .school__item.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+            .school__item.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.  
+        .school__outer            
+            footer.footer        
+                .footer__nav
+                    .footer__nav-head
+                        ul.footer__nav-menu
+                            li.footer__nav-menu-item
+                                a(href="#program").footer__nav-menu-link.js-scroll program
+                            li.footer__nav-menu-item
+                                a(href="#gallery").footer__nav-menu-link.js-scroll gallery  
+                            li.footer__nav-menu-item
+                                a(href="#reviews").footer__nav-menu-link.js-scroll testimonials
+                            li.footer__nav-menu-item
+                                a(href="#contact").footer__nav-menu-link.js-scroll contact              
+                    .footer__nav-wrapper
+                        .footer__nav-item
+                            .footer__nav-icon.footer__nav-icon--phone
+                                +icon('phone')
+                            .footer__nav-text-wrapper
+                                a(href="callto:+38000000000").footer__nav-text +38 000 000 000    
+                        .footer__nav-item
+                            .footer__nav-icon.footer__nav-icon--location
+                                +icon('location')
+                            .footer__nav-text-wrapper
+                                span.footer__nav-text Ukraine, 61002     
+
+                        .footer__nav-item  
+                            .footer__nav-icon.footer__nav-icon--mail
+                                +icon('mail')
+                            .footer__nav-text-wrapper
+                                a(href="mailto:hello@.com").footer__nav-text hello@.com      
+                .copyright
+                    .copyright__wrapper
+                        .copyright__item.
+                            © Copyright 2017 . All Rights Reserved.                
+                        .copyright__item.
+                            site template by <a href="#">NIKANDROV.PRO</a>    

@@ -1,0 +1,17 @@
+header.wrapper.header#header
+    
+    .header__logo-wrapper
+        a(href="#").header__logo
+            include logo.html
+    a(href="#").header__phone.
+        +38 (099) 66-11-730        
+    .container
+        a(href="#").header__mobile-menu.js-mobile-menu
+            span
+        .header__menu-wrapper
+            ul.header__menu
+                - var menu = ['program','gallery','reviews','partners','contact']
+                each menuItem in menu
+                    li.header__menu-item
+                        a(href="#"+ menuItem).header__menu-link.js-scroll
+                            span= menuItem

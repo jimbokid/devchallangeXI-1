@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Roboto Bk';
+    src: url('fonts/Roboto/Roboto-Black.eot');
+    src: url('fonts/Roboto/Roboto-Black.eot?#iefix') format('embedded-opentype'), url('fonts/Roboto/Roboto-Black.woff') format('woff'), url('fonts/Roboto/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Georgia';
+    src: url('fonts/Georgia/Georgia.eot');
+    src: url('fonts/Georgia/Georgia.eot?#iefix') format('embedded-opentype'), url('fonts/Georgia/Georgia.woff') format('woff'), url('fonts/Georgia/Georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'Georgia';
+	src: url('fonts/GeorgiaBold/Georgia-Bold.eot');
+	src: url('fonts/GeorgiaBold/Georgia-Bold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GeorgiaBold/Georgia-Bold.woff') format('woff'),
+		url('fonts/GeorgiaBold/Georgia-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+$robotoBlack: 'Roboto Bk', sans-serif;
+$georgia: 'Georgia';
